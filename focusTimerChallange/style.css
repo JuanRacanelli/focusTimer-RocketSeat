@@ -1,0 +1,195 @@
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #121214;
+  --bg-color-lightMode: #FFFFFF;
+
+  --span-ff: 'Roboto', sans-serif;
+  --span-fw: 500;
+  --span-fs: 12.6rem;
+  --span-lh: 14.8rem;
+  --span-fc: #FFFFFF;
+  --span-fc-lightMode: #323238;
+
+  --buttons-color: #C4C4CC;
+  --buttons-width: 4.8rem;
+  --buttons-height: 4.8rem;
+
+  --bg-card: #29292E;
+  --bg-card-lightMode: #E1E1E6;
+
+  --tree-bgcolor: #20b309;
+  --rain-bgcolor: #38a5d8;
+  --restaurant-bgcolor: #9e58d8;
+  --fire-bgcolor: #d06565;
+}
+
+body {
+  background: var(--bg-color);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  min-height: 100vh;
+}
+
+.lightBody {
+  background: var(--bg-color-lightMode);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  min-height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+.moonIcon {
+  position: absolute;
+
+  display: grid;
+  align-self:flex-start;
+
+  right: 6.4rem;
+  top: 6.4rem;
+}
+
+.moonIcon {
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.moonIcon:hover {
+  transform: scale(1.1);
+}
+
+main 
+span {
+  font-family: var(--span-ff);
+  font-weight: var(--span-fw);
+  font-size: var(--span-fs);
+  line-height: var(--span-lh);
+  color: var(--span-fc);
+}
+
+.lightSpan {
+  font-family: var(--span-ff);
+  font-weight: var(--span-fw);
+  font-size: var(--span-fs);
+  line-height: var(--span-lh);
+  color: var(--span-fc-lightMode);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 0;
+  gap: 4rem;
+
+  margin-top: 4.8rem;
+}
+
+.buttons
+button {
+  background: none;
+  border: none;
+
+  width: var(--buttons-width);
+  height: var(--buttons-height);
+
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.buttons
+button:hover {
+  transform: scale(1.1);
+}
+
+.Themes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 3.2rem;
+}
+
+.Themes img {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
+.treeTheme, .rainTheme, .restaurantTheme, .fireTheme {
+  background: var(--bg-card);
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.lightCard {
+  background: var(--bg-card-lightMode);
+  border-radius: 2.4rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  cursor: pointer;
+
+  transition: transform .3s;
+}
+
+.treeTheme:hover, .rainTheme:hover, .restaurantTheme:hover, .fireTheme:hover {
+  transform: scale(1.1);
+}
+
+.greenBg {
+  background: var(--tree-bgcolor);
+}
+
+.blueBg {
+  background: var(--rain-bgcolor);
+}
+
+.purpleBg {
+  background: var(--restaurant-bgcolor)
+}
+
+.redBg {
+  background: var(--fire-bgcolor);
+}
+
+.florestInput, .rainInput, .coffeInput, .fireInput {
+  width: 9rem;
+  height: 1.6rem;
+}

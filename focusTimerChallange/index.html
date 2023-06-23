@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer </title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <script src="./js/index.js" type="module" defer></script>
+</head>
+<body class="lightBody">
+  <div class="moonIcon">
+    <img src="./assets/alternateTheme.png" alt="" class="darkIcon hide">
+    <img src="./assets/lightIcon.png" alt=""
+    class="lightIcon">
+  </div>
+
+  <main>
+    <span class="minutes lightSpan">00</span>
+    <span class="points lightSpan">:</span>
+    <span class="seconds lightSpan">00</span>
+
+    <div class="buttons">
+      <button class="play">
+        <img src="./assets/play.png" alt="" class="playDark hide">
+        <img src="./assets/playLight.png" alt="" class="playLight">
+      </button>
+      <button class="stop">
+        <img src="./assets/stop.png" alt="" class="stopDark hide">
+        <img src="./assets/stopLight.png" alt="" class="stopLight">
+      </button>
+      <button class="increase">
+       <img src="./assets/+.png" alt="" class="increaseDark hide">
+       <img src="./assets/+Light.png" alt="" class="increaseLight">
+      </button>
+      <button class="decrease">
+        <img src="./assets/-.png" alt="" class="decreaseDark hide">
+        <img src="./assets/-Light.png" alt="" class="decreaseLight">
+      </button>
+    </div>
+  </main>
+
+  <section>
+    <div class="Themes">
+      <div class="treeTheme lightCard">
+        <img src="./assets/treeIcon.png" alt="" class="darkTree hide">
+        <img src="./assets/icontreeLight.png" alt="" class="lightTree">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" class="florestInput">
+      </div>
+      <div class="rainTheme lightCard">
+        <img src="./assets/rainIcon.png" alt="" class="darkRain hide">
+        <img src="./assets/iconrainLight.png" alt="" class="lightRain">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" class="rainInput">
+      </div>
+      <div class="restaurantTheme lightCard">
+        <img src="./assets/restaurantIcon.png" alt="" class="darkCoffe hide">
+        <img src="./assets/iconcoffeLight.png" alt="" class="lightCoffe">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" class="coffeInput">
+      </div>
+      <div class="fireTheme lightCard">
+        <img src="./assets/fireIcon.png" alt="" class="darkFire hide">
+        <img src="./assets/iconfireLight.png" alt="" class="lightFire">
+        <input type="range" min="0" max="1" step="0.1" value="0.5" class="fireInput">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
